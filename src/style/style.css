@@ -19,17 +19,19 @@ body {
 }
 .header__subtitle {
   margin-top: 0.5em;
-  font-size: 2em;
+  font-size: 1.7em;
+  font-weight: 400;
 }
 .header__title {
-  margin-top: 0.3em;
+  margin: 0.2em 0 0 0;
   font-size: 3em;
   font-weight: 600;
   text-transform: uppercase;
 }
 .header__description {
-  margin-top: 0.4em;
-  font-size: 2em;
+  margin-top: 1em;
+  font-size: 1.7em;
+  font-weight: 400;
 }
 .header__button {
   background-image: linear-gradient(to right, #283048 0%, #859398 51%, #283048 100%);
