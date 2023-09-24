@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max the Dev</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇺🇦</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="src/style/style.css" />
 
 </head>
@@ -33,32 +34,62 @@
       </button>
     </div>
 
-    <div class="technologies">
+    <div class="swiper mySwiper technologies">
       <h3 class="technologies__title">
         Development tools i am using:
       </h3>
-      <div class="technologies__grid">
-        <div class="technologies__grid-item">
-
-        </div>
-        <div class="technologies__grid-item">
-
-        </div>
-        <div class="technologies__grid-item">
-
-        </div>
-        <div class="technologies__grid-item">
-
-        </div>
-        <div class="technologies__grid-item">
-
-        </div>
-        <div class="technologies__grid-item">
-
-        </div>
+      <div class="swiper-wrapper technologies__grid">
+        <div class="swiper-slide technologies__grid-item"><img src="/src/img/html5.png" alt=""></div>
+        <div class="swiper-slide technologies__grid-item"><img src="/src/img/css3.png" alt=""></div>
+        <div class="swiper-slide technologies__grid-item"><img src="/src/img/js.webp" alt=""></div>
+        <div class="swiper-slide technologies__grid-item"><img src="/src/img/jquery.png" alt=""></div>
+        <div class="swiper-slide technologies__grid-item"><img src="/src/img/less.png" alt=""></div>
+        <div class="swiper-slide technologies__grid-item"><img src="/src/img/bootstrap.webp" alt=""></div>
+        <div class="swiper-slide technologies__grid-item"><img src="/src/img/shopify.webp" alt=""></div>
+        <div class="swiper-slide technologies__grid-item"><img src="/src/img/liquid.png" alt=""></div>
+        <div class="swiper-slide technologies__grid-item"><img src="/src/img/git.png" alt=""></div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
 
-      <script src="script.js"></script>
-  </body>
-</html>
+    <div>
+      <div class="description">
+        <div class="description__text">
+          <h3 class="description__text-title">
+            A little about myself:
+          </h3>
+          <div class="description__text-information">
+            Since beginning my journey as a freelance front-end developer over 3 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
+          </div>
+          </div>
+        <div class="description__memoji">
+          <img src="/src/img/memoji2.png" alt="memoji2">
+        </div>
+      .
+    </div>
+
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script src="script.js"></script> 
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          spaceBetween: 15,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {     
+            768: {       
+                slidesPerView: 3,
+                spaceBetween: 10     
+            },     
+          }  
+        });
+      </script>
+    </body>
+  </html>
